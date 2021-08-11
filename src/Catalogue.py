@@ -19,6 +19,7 @@ def get_game_rating(game_list, ratings):
 			not_allowed_values.append(rate)
 
 	result = list(filter(lambda x: x.rating in ratings, game_list))
+
 	if len(result)==1:
 		message = 'A game was found'
 	elif len(result)>0:
